@@ -1,0 +1,38 @@
+Lab 4 - Task 2: Family Queries
+
+
+30 ?- consult(['c:/Users/HUAWEI/Downloads/Lab04_family_facts.pl']).
+true.
+
+
+1. Query:
+31 ?- female(X).
+X = sara ;
+X = nora.
+
+
+2. Query:
+32 ?- male(_).
+true .
+
+
+3. Query:
+33 ?- parent(X, Y), parent(Y, faisal).
+X = ali,
+Y = muhammad .
+
+
+4. Query:
+34 ?- parent(ahmad, X), female(X).
+X = sara ;
+X = nora .
+
+
+5. Query:
+35 ?- parent(X, ahmad), parent(X, muhammad).
+X = ali.
+
+
+6. Query:
+36 ?- parent(X, khan), parent(X, nora), male(khan).
+X = ahmad.
